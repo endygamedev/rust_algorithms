@@ -1,4 +1,4 @@
-<a id="header"> <h1>:gear: Algorithms on Rust</h1> </a>
+<h1>:gear: Algorithms on Rust</h1>
 
 <h2> :crab: Content </h2> 
 <ol>
@@ -138,7 +138,7 @@
 
 <br>
 <p align="center">
-    <a href="#header">:arrow_up:<code><b>Back to top</b></code>:arrow_up:</a> 
+    <a href="#">:arrow_up:<code><b>Back to top</b></code>:arrow_up:</a> 
 </p>
 
 <br>
