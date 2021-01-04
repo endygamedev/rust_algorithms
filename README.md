@@ -9,7 +9,7 @@
 
 
 <a id="algebra">
-    <h2> :crab: <a href="https://github.com/endygamedev/rust_algorithms/tree/main/src/algorithms/algebra">Algebra</a> </h2>
+    <h3> :crab: <a href="https://github.com/endygamedev/rust_algorithms/tree/main/src/algorithms/algebra">Algebra</a> </h3>
 </a>
 
 <details>
