@@ -1,13 +1,12 @@
-<h1>:gear: Algorithms on Rust</h1>
+<a id="header"> <h1>:gear: Algorithms on Rust</h1> </a>
 
-<a id="content"> <h2> :crab: Content </h2> </a>
+<h2> :crab: Content </h2> 
 <ol>
   <li><b> <a href="#algebra">Algebra</a> </b></li>
   <li><b> <a href="#search">Seach</a> </b></li>
   <li><b> <a href="#sorting">Sorting</a> </b></li>
 </ol>
 
-<br>
 
 <a id="algebra">
     <h2> :crab: <a href="https://github.com/endygamedev/rust_algorithms/tree/main/src/algorithms/algebra">Algebra</a> </h2>
@@ -44,6 +43,7 @@
       <h6> View full on <a href="https://en.wikipedia.org/wiki/Binary_search_algorithm">Wiki</a> </h6>
     </p>
 </details>
+
 
 <a id="sorting">
     <h2> :crab: <a href="https://github.com/endygamedev/rust_algorithms/tree/main/src/algorithms/sorts">Sorting</a> </h2>
@@ -138,7 +138,7 @@
 
 <br>
 <p align="center">
-    <a href="#content">:arrow_up:<code><b>Back to top </b></code>:arrow_up:</a> 
+    <a href="#header">:arrow_up:<code><b>Back to top</b></code>:arrow_up:</a> 
 </p>
 
 <br>
