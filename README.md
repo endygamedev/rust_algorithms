@@ -26,7 +26,7 @@
 
 
 <a id="search">
-    <h2> :crab: <a href="https://github.com/endygamedev/rust_algorithms/tree/main/src/algorithms/searches">Search</a> </h2>
+    <h3> :crab: <a href="https://github.com/endygamedev/rust_algorithms/tree/main/src/algorithms/searches">Search</a> </h3>
 </a>
 
 <details>
@@ -46,7 +46,7 @@
 
 
 <a id="sorting">
-    <h2> :crab: <a href="https://github.com/endygamedev/rust_algorithms/tree/main/src/algorithms/sorts">Sorting</a> </h2>
+    <h3> :crab: <a href="https://github.com/endygamedev/rust_algorithms/tree/main/src/algorithms/sorts">Sorting</a> </h3>
 </a>
 
 <details>
@@ -138,7 +138,7 @@
 
 <br>
 <p align="center">
-    <a href="#">:arrow_up:<code><b>Back to top</b></code>:arrow_up:</a> 
+    <a href="#">:arrow_up:<b>Back to top</b>:arrow_up:</a> 
 </p>
 
 <br>
