@@ -138,7 +138,7 @@
 
 <br>
 <p align="center">
-    <a href="#">:arrow_up:<b>Back to top</b>:arrow_up:</a> 
+    :arrow_up: <a href="#"><b>Back to top</b></a> :arrow_up:
 </p>
 
 <br>
