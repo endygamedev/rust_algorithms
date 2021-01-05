@@ -1,10 +1,11 @@
-/*  Структура Range
+/*  Structure Range
 
-    Аргументы:
-        * start - начало итератора
-        * stop - конец итератора
-        * step - шар итератора
+    # Arguments:
+        * start - start of iterator
+        * stop - stop of iterator
+        * step - step of iterator
 */
+
 
 pub struct Range(isize, isize, isize);
 

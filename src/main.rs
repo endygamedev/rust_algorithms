@@ -1,4 +1,4 @@
-pub mod algorithms;
+mod algorithms;
 mod constructions;
 
 

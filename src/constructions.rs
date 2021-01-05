@@ -3,7 +3,8 @@ use std::io;
 mod structs;
 use structs::Range;
 
-#[doc = "Создаёт список из чисел от start до stop с шагом step"]
+
+/// Create a list of numbers from _start_ to _stop_ with _step_
 pub fn list_comprehension(start: isize, stop: isize, step: isize) -> Vec<isize> {
 	let range = Range::new(start, stop, step);
 	let mut vec: Vec<isize> = Vec::new();
@@ -11,7 +12,7 @@ pub fn list_comprehension(start: isize, stop: isize, step: isize) -> Vec<isize> 
 	return vec
 }
 
-#[doc = "Создаёт список случаных чисел в диапазоне от min до max длиной len"]
+/// Creates a list of random numbers ranging from _min_ to _max_ with length _len_
 pub fn random_list(len: isize, min: isize, max: isize) -> Vec<isize> {
 	let mut vec: Vec<isize> = Vec::new();
 	let mut rng = rand::thread_rng();
@@ -19,13 +20,13 @@ pub fn random_list(len: isize, min: isize, max: isize) -> Vec<isize> {
 	return vec
 }
 
-#[doc = "Ввод данных с клавиатуры"]
+/// Keyboard input
 pub fn input() -> String {
 	let mut input = String::new();
 	return match io::stdin().read_line(&mut input) {
 		Ok(_) => {
 			input
 		}
-		Err(_) => "Ошибка ввода!".to_string()
+		Err(_) => "Input Error...".to_string()
 	}
 }
