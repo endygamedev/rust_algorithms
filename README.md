@@ -23,7 +23,7 @@
 
 2. <a href="https://github.com/endygamedev/rust_algorithms/blob/main/src/algorithms/algebra/minimal.rs">Minimum of an
    array</a>
-3. <a href="#">Maximum of an array</a>
+3. <a href="https://github.com/endygamedev/rust_algorithms/blob/main/src/algorithms/algebra/maximum.rs">Maximum of an array</a>
 
 <a id="search">
     <h3> :crab: <a href="https://github.com/endygamedev/rust_algorithms/tree/main/src/algorithms/searches">Search</a> </h3>
