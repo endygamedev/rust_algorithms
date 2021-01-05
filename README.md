@@ -14,11 +14,9 @@
 
 <details>
   <summary> 1. <a href="https://github.com/endygamedev/rust_algorithms/blob/main/src/algorithms/algebra/gcd.rs">Euclidean algorithm</a> </summary>
-    <p>
       <h6>Short description</h6>
-      <b>Euclidean algorithm</b> is an efficient method for computing the greatest common divisor (GCD) of two integers, the largest number that divides them both without a remainder.
+      <p><b>Euclidean algorithm</b> is an efficient method for computing the greatest common divisor (GCD) of two integers, the largest number that divides them both without a remainder.</p>
       <h6> View full on <a href="https://en.wikipedia.org/wiki/Euclidean_algorithm">Wiki</a> </h6>
-    </p>
 </details>
 
 2. <a href="https://github.com/endygamedev/rust_algorithms/blob/main/src/algorithms/algebra/minimal.rs">Minimum of an
