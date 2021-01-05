@@ -37,7 +37,7 @@ mod tests {
 		let mut vec: Vec<isize> = constructions::random_list(10, -10, 10);
 		let sorted_vec: Vec<isize> = algorithms::sorts::bubble_sort(vec.clone());
 		vec.sort();
-		assert_eq!(vec, sorted_vec)
+		assert_eq!(vec, sorted_vec);
 	}
 
 	#[test]
@@ -45,7 +45,7 @@ mod tests {
 		let mut vec: Vec<isize> = constructions::random_list(10, -10, 10);
 		let sorted_vec: Vec<isize> = algorithms::sorts::insertion_sort(vec.clone());
 		vec.sort();
-		assert_eq!(vec, sorted_vec)
+		assert_eq!(vec, sorted_vec);
 	}
 
 	#[test]
@@ -53,7 +53,7 @@ mod tests {
 		let mut vec: Vec<isize> = constructions::random_list(10, -10, 10);
 		let sorted_vec: Vec<isize> = algorithms::sorts::selection_sort(vec.clone());
 		vec.sort();
-		assert_eq!(vec, sorted_vec)
+		assert_eq!(vec, sorted_vec);
 	}
 
 	#[test]
@@ -61,7 +61,7 @@ mod tests {
 		let mut vec: Vec<isize> = constructions::random_list(10, -10, 10);
 		let sorted_vec: Vec<isize> = algorithms::sorts::quick_sort(vec.clone());
 		vec.sort();
-		assert_eq!(vec, sorted_vec)
+		assert_eq!(vec, sorted_vec);
 	}
 
 	#[test]
@@ -69,7 +69,15 @@ mod tests {
 		let mut vec: Vec<isize> = constructions::random_list(10, -10, 10);
 		let sorted_vec: Vec<isize> = algorithms::sorts::merge_sort(vec.clone());
 		vec.sort();
-		assert_eq!(vec, sorted_vec)
+		assert_eq!(vec, sorted_vec);
+	}
+
+	#[test]
+	fn shell_sort_test() {
+		let mut vec: Vec<isize> = constructions::random_list(10, -10, 10);
+		let sorted_vec: Vec<isize> = algorithms::sorts::shell_sort(vec.clone());
+		vec.sort();
+		assert_eq!(vec, sorted_vec);
 	}
 
 	/* Search */
