@@ -1,6 +1,6 @@
 [package]
-name = "essential_rust"
-version = "0.1.0"
+name = "rust_algorithms"
+version = "0.0.1"
 authors = ["Egor <bronnikov.40@mail.ru>"]
 edition = "2018"
 
