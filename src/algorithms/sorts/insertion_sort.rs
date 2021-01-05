@@ -1,4 +1,4 @@
-#[doc = "Сортировка методом вставки"]
+/// Insertion sort
 pub fn insertion_sort(list: Vec<isize>) -> Vec<isize> {
 	let mut vec: Vec<isize> = list.clone();
 	let mut j: usize;

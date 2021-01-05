@@ -1,4 +1,4 @@
-#[doc = "Сортировка методом выбора"]
+/// Selection sort
 pub fn selection_sort(list: Vec<isize>) -> Vec<isize> {
 	let mut vec: Vec<isize> = list.clone();
 	let mut minimal: usize;

@@ -1,7 +1,8 @@
-#[doc = "Двоичный поиск"]
+/// Binary search
+/// TODO: Check if the list is sorted
 pub fn binary_search(list: Vec<isize>, value: isize) -> isize {
-	/// Проверяем наличие элемента в списке
-	/// Если его нет, то возвращаем -1
+	/// Checking if an _value_ is in the list
+	/// If it is not in the list, then return -1
 	if !list.contains(&value) { return -1; }
 
 	let mut left: usize = 0;

@@ -1,4 +1,4 @@
-#[doc = "Соединяет части списка по возрастанию"]
+/// Joins parts of a list in ascending order
 fn merge(left_vec: Vec<isize>, right_vec: Vec<isize>, mut res: Vec<isize>) -> Vec<isize>{
 	let mut left = 0;
 	let mut right = 0;
@@ -22,11 +22,10 @@ fn merge(left_vec: Vec<isize>, right_vec: Vec<isize>, mut res: Vec<isize>) -> Ve
 	if right < right_vec.len() {
 		res[index..].copy_from_slice(&right_vec[right..]);
 	}
-
 	return res
 }
 
-#[doc = "Сортировка слияением"]
+/// Merge sort
 pub fn merge_sort(list: Vec<isize>) -> Vec<isize> {
 	let mut vec: Vec<isize> = list;
 	let mid = vec.len()/2;

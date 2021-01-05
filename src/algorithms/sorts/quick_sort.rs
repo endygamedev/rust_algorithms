@@ -1,4 +1,4 @@
-#[doc = "Быстрая сортировка"]
+/// Quicksort
 pub fn quick_sort(list: Vec<isize>) -> Vec<isize> {
 	let mut vec: Vec<isize> = list.clone();
 

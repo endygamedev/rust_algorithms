@@ -3,17 +3,24 @@ pub mod algebra;
 pub mod searches;
 
 
+/// Tests
 #[cfg(test)]
 mod tests {
 	use crate::constructions;
 	use crate::algorithms;
 
-	/* Алгебра */
+	/* Algebra */
 
 	#[test]
 	fn minimal_test() {
 		let vec = vec![-10, 10, 20];
 		assert_eq!(algorithms::algebra::minimal(vec), -10);
+	}
+
+	#[test]
+	fn maximum_test () {
+		let vec = vec![-10, 10, 20];
+		assert_eq!(algorithms::algebra::maximum(vec), 20);
 	}
 
 	#[test]
@@ -23,7 +30,7 @@ mod tests {
 		assert_eq!(algorithms::algebra::gcd(12, 12), 12);
 	}
 
-	/* Сортировки */
+	/* Sorting */
 
 	#[test]
 	fn bubble_sort_test() {
@@ -65,7 +72,7 @@ mod tests {
 		assert_eq!(vec, sorted_vec)
 	}
 
-	/* Поиски */
+	/* Search */
 
 	#[test]
 	fn binary_search_test() {

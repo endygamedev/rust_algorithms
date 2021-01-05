@@ -1,8 +1,8 @@
-#[doc = "Возвращает индекс минимального элемента"]
+/// Returns the minimal value in an array
 pub fn minimal(list: Vec<isize>) -> isize {
 	let mut res: isize = list[0];
 	for element in list {
-		if res > element {
+		if element < res {
 			res = element
 		}
 	}

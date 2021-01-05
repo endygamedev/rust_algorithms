@@ -1,4 +1,4 @@
-#[doc = "Сортировка методом 'пузырька'"]
+/// Bubble sort
 pub fn bubble_sort(list: Vec<isize>) -> Vec<isize> {
 	let mut vec: Vec<isize> = list.clone();
 	for _ in 0..vec.len() {
