@@ -140,11 +140,26 @@
       <p><b>Shell sort</b> is an in-place comparison sort. It can be seen as either a generalization of sorting by exchange (bubble sort) or sorting by insertion (insertion sort). The method starts by sorting pairs of elements far apart from each other, then progressively reducing the gap between elements to be compared. By starting with far apart elements, it can move some out-of-place elements into position faster than a simple nearest neighbor exchange.</p>
       <h6> Performance </h6>
       <ul>
+        <li> Average: <i>O</i>(<i>n</i><sup>2</sup>) </li>
+        <li> Worst-case: <i>O</i>(<i>n</i><sup>2</sup>) </li>
+        <li> Best-case: <i>O</i>(<i>n</i>) </li>
+      </ul>
+      <h6> View full on <a href="https://en.wikipedia.org/wiki/Shellsort">Wiki</a> </h6>
+    </p>
+</details>
+
+<details>
+  <summary> 7. <a href="https://github.com/endygamedev/rust_algorithms/blob/main/src/algorithms/sorts/cocktail_sort.rs">Cocktail shake sort</a> </summary>
+    <p>
+      <h6>Short description</h6>
+      <p><b>Cocktail shaker sort</b>is a slight variation of bubble sort. It differs in that instead of repeatedly passing through the list from bottom to top, it passes alternately from bottom to top and then from top to bottom. It can achieve slightly better performance than a standard bubble sort. The reason for this is that bubble sort only passes through the list in one direction and therefore can only move items backward one step each iteration.</p>
+      <h6> Performance </h6>
+      <ul>
         <li> Average: depends on gap sequence </li>
         <li> Worst-case: <i>O</i>(<i>n</i><sup>2</sup>) </li>
         <li> Best-case: <i>O</i>(<i>n</i> log <i>n</i>) </li>
       </ul>
-      <h6> View full on <a href="https://en.wikipedia.org/wiki/Shellsort">Wiki</a> </h6>
+      <h6> View full on <a href="https://en.wikipedia.org/wiki/Cocktail_shaker_sort">Wiki</a> </h6>
     </p>
 </details>
 
