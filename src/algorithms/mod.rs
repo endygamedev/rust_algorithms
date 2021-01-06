@@ -80,6 +80,14 @@ mod tests {
 		assert_eq!(vec, sorted_vec);
 	}
 
+	#[test]
+	fn cocktail_sort_test () {
+		let mut vec: Vec<isize> = constructions::random_list(10, -10, 10);
+		let sorted_vec: Vec<isize> = algorithms::sorts::cocktail_sort(vec.clone());
+		vec.sort();
+		assert_eq!(vec, sorted_vec);
+	}
+
 	/* Search */
 
 	#[test]
