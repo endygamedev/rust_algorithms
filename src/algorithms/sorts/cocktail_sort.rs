@@ -1,4 +1,4 @@
-/// Cocktail shake sort
+/// Cocktail shaker sort
 pub fn cocktail_sort(list: Vec<isize>) -> Vec<isize> {
 	let mut vec: Vec<isize> = list.clone();
 	let mut left = 0;
