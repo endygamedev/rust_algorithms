@@ -1,6 +1,6 @@
 <h1>:gear: Algorithms on Rust</h1>
 
-<p><img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/endygamedev/rust_algorithms/Rust?style=flat&logo=github&logoColor=%23939393&labelColor=3a3d3b&color=%2331e26c"></p>
+<p><a href="#"><img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/endygamedev/rust_algorithms/Rust?style=flat&logo=github&logoColor=%23939393&labelColor=3a3d3b&color=%2331e26c"></a></p>
 
 <h2> :crab: Content </h2> 
 <ol>
