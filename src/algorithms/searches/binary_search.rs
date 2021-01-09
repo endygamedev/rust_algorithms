@@ -6,7 +6,7 @@ pub fn binary_search(list: Vec<isize>, value: isize) -> isize {
 	if !list.contains(&value) { return -1; }
 
 	let mut left: usize = 0;
-	let mut right : usize= list.len()-1;
+	let mut right : usize = list.len()-1;
 	let mut mid: usize = 0;
 
 	while left <= right {

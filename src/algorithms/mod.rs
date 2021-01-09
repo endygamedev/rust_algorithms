@@ -13,13 +13,13 @@ mod tests {
 
 	#[test]
 	fn minimal_test() {
-		let vec = vec![-10, 10, 20];
+		let vec: Vec<isize> = vec![-10, 10, 20];
 		assert_eq!(algorithms::algebra::minimal(vec), -10);
 	}
 
 	#[test]
 	fn maximum_test () {
-		let vec = vec![-10, 10, 20];
+		let vec: Vec<isize> = vec![-10, 10, 20];
 		assert_eq!(algorithms::algebra::maximum(vec), 20);
 	}
 
@@ -94,5 +94,12 @@ mod tests {
 	fn binary_search_test() {
 		let vec: Vec<isize> = vec![1, 1, 2, 3, 4, 5];
 		assert_eq!(algorithms::searches::binary_search(vec, 2), 2);
+	}
+
+	#[test]
+	fn linear_search_test() {
+		let vec: Vec<isize> = vec![1, 1, 2, 3, 4, 5];
+		assert_eq!(algorithms::searches::linear_search((*vec).to_owned(), 2), 2);
+		assert_ne!(algorithms::searches::linear_search((*vec).to_owned(), 2), 1);
 	}
 }

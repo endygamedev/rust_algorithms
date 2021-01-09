@@ -1,9 +1,9 @@
 mod algorithms;
-mod constructions;
+mod structures;
 
 
 fn main() {
-	let vec: Vec<isize> = constructions::random_list(10, 1, 9);
+	let vec: Vec<isize> = structures::list_comprehension(20, 10, 1);
 	println!("{:?}", vec);
 	let sorted: Vec<isize> = algorithms::sorts::cocktail_sort(vec);
 	println!("{:?}", sorted);
