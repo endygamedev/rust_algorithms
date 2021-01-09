@@ -5,6 +5,6 @@ pub fn linear_search(list: Vec<isize>, value: isize) -> isize {
 	if !list.contains(&value) { return -1; }
 
 	let mut i: usize = 0;
-	while i < list.len() && list[i] != value { i += 1 };
+	while i < list.len() && list[i] != value { i += 1 }
 	return i as isize;
 }

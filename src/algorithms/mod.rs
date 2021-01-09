@@ -6,7 +6,7 @@ pub mod searches;
 /// Tests
 #[cfg(test)]
 mod tests {
-	use crate::constructions;
+	use crate::structures;
 	use crate::algorithms;
 
 	/* Algebra */
@@ -34,7 +34,7 @@ mod tests {
 
 	#[test]
 	fn bubble_sort_test() {
-		let mut vec: Vec<isize> = constructions::random_list(10, -10, 10);
+		let mut vec: Vec<isize> = structures::random_list(10, -10, 10);
 		let sorted_vec: Vec<isize> = algorithms::sorts::bubble_sort(vec.clone());
 		vec.sort();
 		assert_eq!(vec, sorted_vec);
@@ -42,7 +42,7 @@ mod tests {
 
 	#[test]
 	fn insertion_sort_test() {
-		let mut vec: Vec<isize> = constructions::random_list(10, -10, 10);
+		let mut vec: Vec<isize> = structures::random_list(10, -10, 10);
 		let sorted_vec: Vec<isize> = algorithms::sorts::insertion_sort(vec.clone());
 		vec.sort();
 		assert_eq!(vec, sorted_vec);
@@ -50,7 +50,7 @@ mod tests {
 
 	#[test]
 	fn selection_sort_test() {
-		let mut vec: Vec<isize> = constructions::random_list(10, -10, 10);
+		let mut vec: Vec<isize> = structures::random_list(10, -10, 10);
 		let sorted_vec: Vec<isize> = algorithms::sorts::selection_sort(vec.clone());
 		vec.sort();
 		assert_eq!(vec, sorted_vec);
@@ -58,7 +58,7 @@ mod tests {
 
 	#[test]
 	fn quick_sort_test() {
-		let mut vec: Vec<isize> = constructions::random_list(10, -10, 10);
+		let mut vec: Vec<isize> = structures::random_list(10, -10, 10);
 		let sorted_vec: Vec<isize> = algorithms::sorts::quick_sort(vec.clone());
 		vec.sort();
 		assert_eq!(vec, sorted_vec);
@@ -66,7 +66,7 @@ mod tests {
 
 	#[test]
 	fn merge_sort_test() {
-		let mut vec: Vec<isize> = constructions::random_list(10, -10, 10);
+		let mut vec: Vec<isize> = structures::random_list(10, -10, 10);
 		let sorted_vec: Vec<isize> = algorithms::sorts::merge_sort(vec.clone());
 		vec.sort();
 		assert_eq!(vec, sorted_vec);
@@ -74,7 +74,7 @@ mod tests {
 
 	#[test]
 	fn shell_sort_test() {
-		let mut vec: Vec<isize> = constructions::random_list(10, -10, 10);
+		let mut vec: Vec<isize> = structures::random_list(10, -10, 10);
 		let sorted_vec: Vec<isize> = algorithms::sorts::shell_sort(vec.clone());
 		vec.sort();
 		assert_eq!(vec, sorted_vec);
@@ -82,7 +82,7 @@ mod tests {
 
 	#[test]
 	fn cocktail_sort_test () {
-		let mut vec: Vec<isize> = constructions::random_list(10, -10, 10);
+		let mut vec: Vec<isize> = structures::random_list(10, -10, 10);
 		let sorted_vec: Vec<isize> = algorithms::sorts::cocktail_sort(vec.clone());
 		vec.sort();
 		assert_eq!(vec, sorted_vec);
