@@ -1,6 +1,4 @@
-<h1>:gear: Algorithms on Rust</h1>
-
-<p><a href="#"><img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/endygamedev/rust_algorithms/Rust?style=flat&logo=github&logoColor=%23939393&labelColor=3a3d3b&color=%2331e26c"></a></p>
+<h1>:gear: Algorithms on Rust  <a href="https://github.com/endygamedev/rust_algorithms/actions?query=workflow%3ARust"><img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/endygamedev/rust_algorithms/Rust?style=flat&logo=github&logoColor=%23939393&labelColor=3a3d3b&color=%2331e26c&label=Tests" hspace="15"></a> </h1>
 
 <h2> :crab: Content </h2> 
 <ol>
@@ -41,6 +39,21 @@
         <li> Best-case: <i>O</i>(1) </li>
       </ul>
       <h6> View full on <a href="https://en.wikipedia.org/wiki/Binary_search_algorithm">Wiki</a> </h6>
+    </p>
+</details>
+
+<details>
+  <summary> 2. <a href="https://github.com/endygamedev/rust_algorithms/blob/main/src/algorithms/searches/linear_search.rs">Linear search</a> </summary>
+    <p>
+      <h6>Short description</h6>
+      <p>A <b>linear search</b> sequentially checks each element of the list until it finds an element that matches the target value. If the algorithm reaches the end of the list, the search terminates unsuccessfully.</p>
+      <h6> Performance </h6>
+      <ul>
+        <li> Average: <i>O</i>(<i>n</i>/2) </li>
+        <li> Worst-case: <i>O</i>(<i>n</i>) </li>
+        <li> Best-case: <i>O</i>(1) </li>
+      </ul>
+      <h6> View full on <a href="https://en.wikipedia.org/wiki/Linear_search">Wiki</a> </h6>
     </p>
 </details>
 
