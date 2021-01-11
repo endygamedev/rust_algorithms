@@ -1,4 +1,4 @@
-<h1>:gear: Algorithms on Rust  <a href="https://github.com/endygamedev/rust_algorithms/actions?query=workflow%3ARust"><img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/endygamedev/rust_algorithms/Rust?style=flat&logo=github&logoColor=%23939393&labelColor=3a3d3b&color=%2331e26c&label=Tests" hspace="15"></a> </h1>
+<h1>:gear: Algorithms on Rust  <a href="https://github.com/endygamedev/rust_algorithms/actions?query=workflow%3ARust"><img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/endygamedev/rust_algorithms/Rust?style=flat&logo=github&logoColor=%23939393&labelColor=3a3d3b&color=%2331e26c&label=CI" hspace="15"></a> <a href="https://travis-ci.com/github/endygamedev/rust_algorithms"><img alt="Travis CI" src="https://img.shields.io/travis/com/endygamedev/rust_algorithms?style=flat&logo=travis&labelColor=3a3d3b&color=%2331e26c&label=Tavis"></a></h1>
 
 <h2> :crab: Content </h2> 
 <ol>
