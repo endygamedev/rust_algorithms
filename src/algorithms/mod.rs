@@ -1,6 +1,7 @@
 pub mod sorts;
 pub mod algebra;
 pub mod searches;
+pub mod dynamic_programming;
 
 
 /// Tests
