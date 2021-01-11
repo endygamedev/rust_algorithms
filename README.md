@@ -2,9 +2,10 @@
 
 <h2> :crab: Content </h2> 
 <ol>
-  <li><b> <a href="#algebra">Algebra</a> </b></li>
-  <li><b> <a href="#search">Seach</a> </b></li>
-  <li><b> <a href="#sorting">Sorting</a> </b></li>
+  <li><b><a href="#algebra">Algebra</a></b></li>
+  <li><b><a href="#search">Seach</a></b></li>
+  <li><b><a href="#sorting">Sorting</a></b></li>
+  <li><b><a href="#dynamic_programming">Dynamic programming</a></b></li>
 </ol>
 
 
@@ -175,6 +176,24 @@
         <li> Best-case: <i>O</i>(<i>n</i>) </li>
       </ul>
       <h6> View full on <a href="https://en.wikipedia.org/wiki/Cocktail_shaker_sort">Wiki</a> </h6>
+    </p>
+</details>
+
+
+<a id="dynamic_programming">
+    <h3> :crab: <a href="https://github.com/endygamedev/rust_algorithms/tree/main/src/algorithms/dynamic_programming">Dynamic programming</a> </h3>
+</a>
+
+<details>
+  <summary> 1. <a href="https://github.com/endygamedev/rust_algorithms/blob/main/src/algorithms/dynamic_programming/knapsack.rs">0-1 Knapsack problem</a> </summary>
+    <p>
+      <h6>Short description</h6>
+      <p>The <b>knapsack problem</b> is a problem in combinatorial optimization: Given a set of items, each with a weight and a value, determine the number of each item to include in a collection so that the total weight is less than or equal to a given limit and the total value is as large as possible. It derives its name from the problem faced by someone who is constrained by a fixed-size knapsack and must fill it with the most valuable items. The problem often arises in resource allocation where the decision makers have to choose from a set of non-divisible projects or tasks under a fixed budget or time constraint, respectively.</p>
+      <h6> Performance </h6>
+      <ul>
+        <li> Complexity: <i>O</i>(<i>NW</i>) <sub>, where `N` is number of items in knapsack and `W` is knapsack capacity</sub></li>
+      </ul>
+      <h6> View full on <a href="https://en.wikipedia.org/wiki/Knapsack_problem">Wiki</a> </h6>
     </p>
 </details>
 
