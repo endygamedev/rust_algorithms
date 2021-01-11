@@ -1,8 +1,7 @@
 mod gcd;
-mod minimal;
 mod maximum;
-
+mod minimal;
 
 pub use self::gcd::gcd;
-pub use self::minimal::minimal;
 pub use self::maximum::maximum;
+pub use self::minimal::minimal;
