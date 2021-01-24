@@ -205,5 +205,5 @@
 
 <br>
 <p align="center">
-  <sub> | <a href="https://endygamedev.github.io"> 👨‍💻 endygamdev </a> | </sub>
+  <sub> | <a href="https://endygamedev.github.io"> :man_technologist: endygamedev </a> | </sub>
 </p>
