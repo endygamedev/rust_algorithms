@@ -1,7 +1,7 @@
 //! Merge sort
 
-/// merge(left_vec, right_vec, res) joins parts of a list in ascending order
-fn merge(left_vec: Vec<isize>, right_vec: Vec<isize>, mut res: Vec<isize>) -> Vec<isize> {
+/// _merge(left_vec, right_vec, res) joins parts of a list in ascending order
+fn _merge(left_vec: Vec<isize>, right_vec: Vec<isize>, mut res: Vec<isize>) -> Vec<isize> {
     let mut left = 0;
     let mut right = 0;
     let mut index = 0;
@@ -38,7 +38,7 @@ pub fn merge_sort(list: Vec<isize>) -> Vec<isize> {
     let left_vec: Vec<isize> = merge_sort(vec[..mid].to_vec());
     let right_vec: Vec<isize> = merge_sort(vec[mid..].to_vec());
 
-    let res: Vec<isize> = merge(left_vec, right_vec, vec);
+    let res: Vec<isize> = _merge(left_vec, right_vec, vec);
 
     return res;
 }
@@ -50,26 +50,40 @@ mod tests {
     use structures::random_list;
 
     #[test]
-    fn test01() {
-        let mut vec: Vec<isize> = random_list(10, -10, 10);
-        let sorted_vec: Vec<isize> = merge_sort(vec.clone());
-        vec.sort();
-        assert_eq!(vec, sorted_vec);
+    fn basic_test() {
+        let vec = vec![10, 2, 4, 5, 1, 2, 4, 5, 1, 2, 7];
+        assert_eq!(merge_sort(vec), vec![1, 1, 2, 2, 2, 4, 4, 5, 5, 7, 10]);
     }
 
     #[test]
-    fn test02() {
-        let mut vec: Vec<isize> = random_list(500, -500, 500);
-        let sorted_vec: Vec<isize> = merge_sort(vec.clone());
-        vec.sort();
-        assert_eq!(vec, sorted_vec);
+    fn reverse_test() {
+        let vec = vec![10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
+        let mut clone = vec.clone();
+        clone.sort();
+        assert_eq!(merge_sort(vec), clone);
     }
 
     #[test]
-    fn test03() {
-        let mut vec: Vec<isize> = random_list(1000, -1000, 1000);
-        let sorted_vec: Vec<isize> = merge_sort(vec.clone());
-        vec.sort();
-        assert_eq!(vec, sorted_vec);
+    fn rand_test01() {
+        let vec = random_list(10, -10, 10);
+        let mut clone = vec.clone();
+        clone.sort();
+        assert_eq!(merge_sort(vec), clone);
+    }
+
+    #[test]
+    fn rand_test02() {
+        let vec = random_list(500, -500, 500);
+        let mut clone = vec.clone();
+        clone.sort();
+        assert_eq!(merge_sort(vec), clone);
+    }
+
+    #[test]
+    fn rand_test03() {
+        let vec = random_list(1000, -1000, 1000);
+        let mut clone = vec.clone();
+        clone.sort();
+        assert_eq!(merge_sort(vec), clone);
     }
 }

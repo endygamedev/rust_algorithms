@@ -1,7 +1,7 @@
 //! Binary search
 
-/// is_sorted(list) return the check if the `list` is sorted
-fn is_sorted(list: &Vec<isize>) -> bool {
+/// _is_sorted(list) return the check if the `list` is sorted
+fn _is_sorted(list: &Vec<isize>) -> bool {
     let mut original: Vec<isize> = list.clone();
     original.sort();
     return original == *list;
@@ -10,7 +10,7 @@ fn is_sorted(list: &Vec<isize>) -> bool {
 /// binary_search(list, value) returns the position of the `value` in the `list`
 pub fn binary_search(list: Vec<isize>, value: isize) -> isize {
     // Checking if `list` is sorted because this algorithm works only with sorted lists
-    assert!(is_sorted(&list), "List isn't sorted!");
+    assert!(_is_sorted(&list), "List isn't sorted!");
     // Checking if `value` is in the `list`
     // If it is not in the list, then return -1
     if !list.contains(&value) {

@@ -1,8 +1,7 @@
 //! Shell sort
 
-/// shell_sort(list) returns sorted `list` by shell method
-pub fn shell_sort(list: Vec<isize>) -> Vec<isize> {
-    let mut vec: Vec<isize> = list.clone();
+/// shell_sort(vec) returns sorted `vec` by shell method
+pub fn shell_sort<T: Ord>(vec: &mut [T]) {
     let mut step: usize = vec.len() / 2;
     let mut j: usize;
 
@@ -16,7 +15,6 @@ pub fn shell_sort(list: Vec<isize>) -> Vec<isize> {
         }
         step /= 2;
     }
-    return vec;
 }
 
 #[cfg(test)]
@@ -26,26 +24,52 @@ mod tests {
     use structures::random_list;
 
     #[test]
-    fn test01() {
-        let mut vec: Vec<isize> = random_list(10, -10, 10);
-        let sorted_vec: Vec<isize> = shell_sort(vec.clone());
-        vec.sort();
-        assert_eq!(vec, sorted_vec);
+    fn basic_test() {
+        let mut vec = vec![10, 2, 4, 5, 1, 2, 4, 5, 1, 2, 7];
+        shell_sort(&mut vec);
+        assert_eq!(vec, vec![1, 1, 2, 2, 2, 4, 4, 5, 5, 7, 10]);
     }
 
     #[test]
-    fn test02() {
-        let mut vec: Vec<isize> = random_list(500, -500, 500);
-        let sorted_vec: Vec<isize> = shell_sort(vec.clone());
-        vec.sort();
-        assert_eq!(vec, sorted_vec);
+    fn str_test() {
+        let mut vec = vec!["a", "c", "b"];
+        shell_sort(&mut vec);
+        assert_eq!(vec, vec!["a", "b", "c"]);
     }
 
     #[test]
-    fn test03() {
-        let mut vec: Vec<isize> = random_list(1000, -1000, 1000);
-        let sorted_vec: Vec<isize> = shell_sort(vec.clone());
-        vec.sort();
-        assert_eq!(vec, sorted_vec);
+    fn reverse_test() {
+        let mut vec = vec![10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
+        let mut clone = vec.clone();
+        clone.sort();
+        shell_sort(&mut vec);
+        assert_eq!(vec, clone);
+    }
+
+    #[test]
+    fn rand_test01() {
+        let mut vec = random_list(10, -10, 10);
+        let mut clone = vec.clone();
+        clone.sort();
+        shell_sort(&mut vec);
+        assert_eq!(vec, clone);
+    }
+
+    #[test]
+    fn rand_test02() {
+        let mut vec = random_list(500, -500, 500);
+        let mut clone = vec.clone();
+        clone.sort();
+        shell_sort(&mut vec);
+        assert_eq!(vec, clone);
+    }
+
+    #[test]
+    fn rand_test03() {
+        let mut vec = random_list(1000, -1000, 1000);
+        let mut clone = vec.clone();
+        clone.sort();
+        shell_sort(&mut vec);
+        assert_eq!(vec, clone);
     }
 }

@@ -34,26 +34,40 @@ mod tests {
     use structures::random_list;
 
     #[test]
-    fn test01() {
-        let mut vec: Vec<isize> = random_list(10, -10, 10);
-        let sorted_vec: Vec<isize> = quick_sort(vec.clone());
-        vec.sort();
-        assert_eq!(vec, sorted_vec);
+    fn basic_test() {
+        let vec = vec![10, 2, 4, 5, 1, 2, 4, 5, 1, 2, 7];
+        assert_eq!(quick_sort(vec), vec![1, 1, 2, 2, 2, 4, 4, 5, 5, 7, 10]);
     }
 
     #[test]
-    fn test02() {
-        let mut vec: Vec<isize> = random_list(500, -500, 500);
-        let sorted_vec: Vec<isize> = quick_sort(vec.clone());
-        vec.sort();
-        assert_eq!(vec, sorted_vec);
+    fn reverse_test() {
+        let vec = vec![10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
+        let mut clone = vec.clone();
+        clone.sort();
+        assert_eq!(quick_sort(vec), clone);
     }
 
     #[test]
-    fn test03() {
-        let mut vec: Vec<isize> = random_list(1000, -1000, 1000);
-        let sorted_vec: Vec<isize> = quick_sort(vec.clone());
-        vec.sort();
-        assert_eq!(vec, sorted_vec);
+    fn rand_test01() {
+        let vec = random_list(10, -10, 10);
+        let mut clone = vec.clone();
+        clone.sort();
+        assert_eq!(quick_sort(vec), clone);
+    }
+
+    #[test]
+    fn rand_test02() {
+        let vec = random_list(500, -500, 500);
+        let mut clone = vec.clone();
+        clone.sort();
+        assert_eq!(quick_sort(vec), clone);
+    }
+
+    #[test]
+    fn rand_test03() {
+        let vec = random_list(1000, -1000, 1000);
+        let mut clone = vec.clone();
+        clone.sort();
+        assert_eq!(quick_sort(vec), clone);
     }
 }

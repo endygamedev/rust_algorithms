@@ -1,13 +1,13 @@
 //! Solves the knapsack problem
 use std::cmp::max;
 
-/// knapsack_table(w, weights, values) returns the knapsack table (`n`, `m`) with maximum values, where `n` is number of items
+/// _knapsack_table(w, weights, values) returns the knapsack table (`n`, `m`) with maximum values, where `n` is number of items
 ///
 /// Arguments:
 ///     * `w` - knapsack capacity
 ///     * `weights` - set of weights for each item
 ///     * `values` - set of values for each item
-fn knapsack_table(w: &usize, weights: &[usize], values: &[usize]) -> Vec<Vec<usize>> {
+fn _knapsack_table(w: &usize, weights: &[usize], values: &[usize]) -> Vec<Vec<usize>> {
     // Initialize `n` - number of items
     let n: usize = weights.len();
     // Initialize `m`
@@ -34,23 +34,23 @@ fn knapsack_table(w: &usize, weights: &[usize], values: &[usize]) -> Vec<Vec<usi
     m
 }
 
-/// knapsack_items(weights, m, i, j) returns the indices of the items of the optimal knapsack (from 1 to `n`)
+/// _knapsack_items(weights, m, i, j) returns the indices of the items of the optimal knapsack (from 1 to `n`)
 ///
 /// Arguments:
 ///     * `weights` - set of weights for each item
 ///     * `m` - knapsack table with maximum values
 ///     * `i` - include items 1 through `i` in knapsack (for the initial value, use `n`)
 ///     * `j` - maximum weight of the knapsack
-fn knapsack_items(weights: &[usize], m: &[Vec<usize>], i: usize, j: usize) -> Vec<usize> {
+fn _knapsack_items(weights: &[usize], m: &[Vec<usize>], i: usize, j: usize) -> Vec<usize> {
     if i == 0 {
         return vec![];
     }
     if m[i][j] > m[i - 1][j] {
-        let mut knap: Vec<usize> = knapsack_items(weights, m, i - 1, j - weights[i - 1]);
+        let mut knap: Vec<usize> = _knapsack_items(weights, m, i - 1, j - weights[i - 1]);
         knap.push(i);
         knap
     } else {
-        knapsack_items(weights, m, i - 1, j)
+        _knapsack_items(weights, m, i - 1, j)
     }
 }
 
@@ -73,9 +73,9 @@ pub fn knapsack(w: usize, weights: Vec<usize>, values: Vec<usize>) -> (usize, us
     // Initialize `n` - number of items
     let n: usize = weights.len();
     // Find the knapsack table
-    let m: Vec<Vec<usize>> = knapsack_table(&w, &weights, &values);
+    let m: Vec<Vec<usize>> = _knapsack_table(&w, &weights, &values);
     // Find the indices of the items
-    let items: Vec<usize> = knapsack_items(&weights, &m, n, w);
+    let items: Vec<usize> = _knapsack_items(&weights, &m, n, w);
     // Find the total weight of optimal knapsack
     let mut total_weight: usize = 0;
     for i in items.iter() {
