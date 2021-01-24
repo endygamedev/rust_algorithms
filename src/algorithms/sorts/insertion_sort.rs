@@ -1,6 +1,5 @@
 //! Insertion sort
 
-
 /// insertion_sort(list) returns sorted `list` by insertion method
 pub fn insertion_sort(list: Vec<isize>) -> Vec<isize> {
     let mut vec: Vec<isize> = list.clone();
@@ -15,11 +14,10 @@ pub fn insertion_sort(list: Vec<isize>) -> Vec<isize> {
     return vec;
 }
 
-
 #[cfg(test)]
 mod tests {
-    use crate::structures;
     use super::insertion_sort;
+    use crate::structures;
     use structures::random_list;
 
     #[test]

@@ -1,6 +1,5 @@
 //! Selection sort
 
-
 /// selection_sort(list) returns sorted `list` by selection method
 pub fn selection_sort(list: Vec<isize>) -> Vec<isize> {
     let mut vec: Vec<isize> = list.clone();
@@ -17,11 +16,10 @@ pub fn selection_sort(list: Vec<isize>) -> Vec<isize> {
     return vec;
 }
 
-
 #[cfg(test)]
 mod tests {
-    use crate::structures;
     use super::selection_sort;
+    use crate::structures;
     use structures::random_list;
 
     #[test]

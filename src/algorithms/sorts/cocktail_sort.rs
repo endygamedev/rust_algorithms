@@ -1,6 +1,5 @@
 //! Cocktail shaker sort
 
-
 /// cocktail_sort(list) returns sorted `list` by cocktail shaker method
 pub fn cocktail_sort(list: Vec<isize>) -> Vec<isize> {
     let mut vec: Vec<isize> = list.clone();
@@ -28,11 +27,10 @@ pub fn cocktail_sort(list: Vec<isize>) -> Vec<isize> {
     return vec;
 }
 
-
 #[cfg(test)]
 mod tests {
-    use crate::structures;
     use super::cocktail_sort;
+    use crate::structures;
     use structures::random_list;
 
     #[test]

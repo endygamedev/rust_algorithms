@@ -1,6 +1,5 @@
 //! Bubble sort
 
-
 /// bubble_sort(list) returns sorted `list` by bubble method
 pub fn bubble_sort(list: Vec<isize>) -> Vec<isize> {
     let mut vec: Vec<isize> = list.clone();
@@ -14,11 +13,10 @@ pub fn bubble_sort(list: Vec<isize>) -> Vec<isize> {
     return vec;
 }
 
-
 #[cfg(test)]
 mod tests {
-    use crate::structures;
     use super::bubble_sort;
+    use crate::structures;
     use structures::random_list;
 
     #[test]

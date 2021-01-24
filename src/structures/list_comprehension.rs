@@ -11,7 +11,6 @@ pub fn list_comprehension(start: isize, stop: isize, step: isize) -> Vec<isize> 
     };
 }
 
-
 #[cfg(test)]
 mod tests {
     use super::list_comprehension;

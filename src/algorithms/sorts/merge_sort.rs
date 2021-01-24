@@ -1,6 +1,5 @@
 //! Merge sort
 
-
 /// merge(left_vec, right_vec, res) joins parts of a list in ascending order
 fn merge(left_vec: Vec<isize>, right_vec: Vec<isize>, mut res: Vec<isize>) -> Vec<isize> {
     let mut left = 0;
@@ -32,7 +31,9 @@ fn merge(left_vec: Vec<isize>, right_vec: Vec<isize>, mut res: Vec<isize>) -> Ve
 pub fn merge_sort(list: Vec<isize>) -> Vec<isize> {
     let vec: Vec<isize> = list;
     let mid = vec.len() / 2;
-    if mid == 0 { return vec; }
+    if mid == 0 {
+        return vec;
+    }
 
     let left_vec: Vec<isize> = merge_sort(vec[..mid].to_vec());
     let right_vec: Vec<isize> = merge_sort(vec[mid..].to_vec());
@@ -42,11 +43,10 @@ pub fn merge_sort(list: Vec<isize>) -> Vec<isize> {
     return res;
 }
 
-
 #[cfg(test)]
 mod tests {
-    use crate::structures;
     use super::merge_sort;
+    use crate::structures;
     use structures::random_list;
 
     #[test]

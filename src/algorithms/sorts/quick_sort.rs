@@ -1,6 +1,5 @@
 //! Quicksort
 
-
 /// quick_sort(list) returns sorted `list` by quicksort method
 pub fn quick_sort(list: Vec<isize>) -> Vec<isize> {
     let vec: Vec<isize> = list.clone();
@@ -25,14 +24,13 @@ pub fn quick_sort(list: Vec<isize>) -> Vec<isize> {
         [quick_sort(less), equal, quick_sort(greater)].concat()
     } else {
         vec![]
-    }
+    };
 }
-
 
 #[cfg(test)]
 mod tests {
-    use crate::structures;
     use super::quick_sort;
+    use crate::structures;
     use structures::random_list;
 
     #[test]
