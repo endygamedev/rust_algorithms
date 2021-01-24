@@ -1,5 +1,6 @@
 use std::io;
 
+
 /// Keyboard input
 pub fn input() -> String {
     let mut input = String::new();

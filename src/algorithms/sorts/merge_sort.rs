@@ -1,4 +1,7 @@
-/// Joins parts of a list in ascending order
+//! Merge sort
+
+
+/// merge(left_vec, right_vec, res) joins parts of a list in ascending order
 fn merge(left_vec: Vec<isize>, right_vec: Vec<isize>, mut res: Vec<isize>) -> Vec<isize> {
     let mut left = 0;
     let mut right = 0;
@@ -25,13 +28,11 @@ fn merge(left_vec: Vec<isize>, right_vec: Vec<isize>, mut res: Vec<isize>) -> Ve
     return res;
 }
 
-/// Merge sort
+/// merge_sort(list) returns sorted `list` by merge method
 pub fn merge_sort(list: Vec<isize>) -> Vec<isize> {
-    let mut vec: Vec<isize> = list;
+    let vec: Vec<isize> = list;
     let mid = vec.len() / 2;
-    if mid == 0 {
-        return vec;
-    }
+    if mid == 0 { return vec; }
 
     let left_vec: Vec<isize> = merge_sort(vec[..mid].to_vec());
     let right_vec: Vec<isize> = merge_sort(vec[mid..].to_vec());
@@ -39,4 +40,36 @@ pub fn merge_sort(list: Vec<isize>) -> Vec<isize> {
     let res: Vec<isize> = merge(left_vec, right_vec, vec);
 
     return res;
+}
+
+
+#[cfg(test)]
+mod tests {
+    use crate::structures;
+    use super::merge_sort;
+    use structures::random_list;
+
+    #[test]
+    fn test01() {
+        let mut vec: Vec<isize> = random_list(10, -10, 10);
+        let sorted_vec: Vec<isize> = merge_sort(vec.clone());
+        vec.sort();
+        assert_eq!(vec, sorted_vec);
+    }
+
+    #[test]
+    fn test02() {
+        let mut vec: Vec<isize> = random_list(500, -500, 500);
+        let sorted_vec: Vec<isize> = merge_sort(vec.clone());
+        vec.sort();
+        assert_eq!(vec, sorted_vec);
+    }
+
+    #[test]
+    fn test03() {
+        let mut vec: Vec<isize> = random_list(1000, -1000, 1000);
+        let sorted_vec: Vec<isize> = merge_sort(vec.clone());
+        vec.sort();
+        assert_eq!(vec, sorted_vec);
+    }
 }
