@@ -1,6 +1,7 @@
 language: rust
 
 before_script:
+    - rustup update
     - rustup component add rustfmt-preview
     - rustup component add clippy
 script:
